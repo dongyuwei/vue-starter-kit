@@ -1,0 +1,12 @@
+{
+    "presets": [
+      [ "env", {
+        "targets": {
+          "ie": 8
+        },
+        "modules": "commonjs",
+        "useBuiltIns": true,
+        "debug": false
+      }]
+    ]
+  }
