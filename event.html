@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dialog {
+            margin: 100px;
+            padding: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="dialog" id="dialog">
+        I'm a good dialog
+    </div>
+
+    <script>
+        const body = document.body;
+        const dialog = document.getElementById("dialog");
+        body.addEventListener("click", function() {
+            dialog.style.display = "none";
+        }, false);
+        dialog.addEventListener("click", function(event) {
+            event.stopPropagation();
+        }, false);
+    </script>
+</body>
+</html>
