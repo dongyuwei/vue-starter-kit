@@ -2,3 +2,5 @@ node_modules
 build
 .cache
 dist
+.eslintcache
+.DS_Store
