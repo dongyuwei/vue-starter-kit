@@ -42,5 +42,9 @@
     "babel-jest": "^23.4.0",
     "babel-preset-react": "^6.24.1",
     "react-test-renderer": "^16.4.1"
+  },
+  "alias": {
+    "react": ".parcel-globals/react.js",
+    "react-dom": ".parcel-globals/react-dom.js"
   }
 }
