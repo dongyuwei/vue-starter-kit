@@ -11,10 +11,35 @@
 
 <body>
   <div id="app"></div>
+  <div id="app-7">
+    <ol>
+      <!--
+        Now we provide each todo-item with the todo object
+        it's representing, so that its content can be dynamic.
+        We also need to provide each component with a "key",
+        which will be explained later.
+      -->
+      <todo-item
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id">
+      </todo-item>
+    </ol>
+  </div>
+  
   <div class="foo global-style">ffoooo</div>
   <div class="bar2">2222</div>
+  <div id="vue-app">
+    <ol>
+      <todo-item
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id">
+      </todo-item>
+  </div>
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
   <script src="./index.js"></script>
 </body>
 
