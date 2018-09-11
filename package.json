@@ -7,7 +7,8 @@
     "test": "jest",
     "lint": "eslint *.js --cache --ignore-path .gitignore --ignore-path .eslintignore",
     "prettier:one": "eslint --cache --fix",
-    "build_without_minify": "yarn parcel build --out-dir bundled --no-minify --no-source-maps --no-cache *.js"
+    "build_without_minify": "yarn parcel build --out-dir bundled --no-minify --no-source-maps --no-cache *.js",
+    "dev": "yarn parcel --no-cache index.html"
   },
   "husky": {
     "hooks": {

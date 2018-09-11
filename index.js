@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import HelloMessage from "./hello_message";
 import Vue from "vue";
+import style from "./test.less";
 
 const mountNode = document.getElementById("app");
 ReactDOM.render(<HelloMessage name="world" />, mountNode);
 
 Vue.component("todo-item", {
   props: ["todo"],
-  template: "<li>{{ todo.text }}</li>",
+  template: `<li class="${style.foobar}">{{ todo.text }}</li>`,
 });
 
 new Vue({
