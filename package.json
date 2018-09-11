@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint *.js --cache --ignore-path .gitignore --ignore-path .eslintignore",
-    "prettier:one": "eslint --cache --fix"
+    "prettier:one": "eslint --cache --fix",
+    "build_without_minify": "yarn parcel build --out-dir bundled --no-minify --no-source-maps --no-cache *.js"
   },
   "husky": {
     "hooks": {
