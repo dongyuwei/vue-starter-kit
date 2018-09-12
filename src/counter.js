@@ -1,4 +1,6 @@
-export default {
+import Vue from "vue";
+
+export default Vue.component("counter", {
   template: `
     <div>
       <span class="count">{{ count }}</span>
@@ -17,4 +19,4 @@ export default {
       this.count++;
     },
   },
-};
+});

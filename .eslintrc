@@ -35,13 +35,6 @@
     "no-return-await": "error",
     "no-var": "error",
     "import/no-duplicates": "error",
-    "import/extensions": [
-      "error",
-      "never",
-      {
-        ".json": "always"
-      }
-    ],
     "jest/no-disabled-tests": "error",
     "prettier/prettier": ["error", {
       "trailingComma": "es5",
