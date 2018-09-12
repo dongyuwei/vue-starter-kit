@@ -1,10 +1,7 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "rules": {
     "strict": "error",
@@ -46,10 +43,6 @@
       }
     ],
     "jest/no-disabled-tests": "error",
-    "react/require-optimization": "error",
-    "react/no-unused-prop-types": "error",
-    "react/no-unused-state": "error",
-    "react/no-deprecated": "warn",
     "prettier/prettier": ["error", {
       "trailingComma": "es5",
       "parser": "flow",
@@ -62,15 +55,13 @@
     "browser": true,
     "node": true
   },
-  "plugins": ["react", "jest", "prettier"],
+  "plugins": ["jest", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jest/recommended",
-    "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
   "settings" : {
     "import/resolver": {

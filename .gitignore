@@ -5,3 +5,4 @@ dist
 bundled
 .eslintcache
 .DS_Store
+yarn-error.log

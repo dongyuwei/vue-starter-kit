@@ -1,6 +1,12 @@
-# test-css-module
-
-code snippets to test css module, parcel-bundler, babel, jest, prettier, eslint, husky.
+# front-end tech stack
+* Vue js
+* Less, CSS Module
+* parcel-bundler
+* prettier
+* eslint
+* husky
+* babel
+* jest
 
 ## start dev server
 

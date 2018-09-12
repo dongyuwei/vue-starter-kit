@@ -3,7 +3,7 @@
   "map": true,
   "plugins": {
     "postcss-modules": {
-      "globalModulePaths": ["node_modules", "src/etc"],
+      "globalModulePaths": ["node_modules"],
       "generateScopedName": "scoped_[path]_[name]_[local]_[hash:base64:5]",
     },
   },
