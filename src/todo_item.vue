@@ -1,5 +1,5 @@
 <template>
-  <li class="todo-item">{{ todo.text }}</li>
+  <li>{{ todo.text }}</li>
 </template>
 
 <script>
@@ -8,9 +8,10 @@ module.exports = {
 };
 </script>
 
-<style scoped>
-.todo-item {
+<style lang="less" scoped>
+@import "./color.less";
+li {
   font-size: 1em;
-  text-align: center;
+  color: @red;
 }
 </style>
