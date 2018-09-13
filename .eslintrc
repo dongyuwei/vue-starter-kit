@@ -1,6 +1,7 @@
 {
-  "parser": "babel-eslint",
   "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
     "sourceType": "module"
   },
   "rules": {
@@ -38,8 +39,7 @@
     "jest/no-disabled-tests": "error",
     "prettier/prettier": ["error", {
       "trailingComma": "es5",
-      "parser": "flow",
-      "printWidth": 140,
+      "printWidth": 140
     }]
   },
   "env": {
@@ -54,6 +54,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jest/recommended",
+    "plugin:vue/recommended",
     "prettier"
   ],
   "settings" : {

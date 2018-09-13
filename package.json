@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ./src/*.js --cache --ignore-path .gitignore --ignore-path .eslintignore --fix",
+    "lint": "eslint --ext .js,.vue ./src --cache --ignore-path .gitignore --ignore-path .eslintignore --fix",
     "prettier:one": "eslint --cache --fix",
     "build_without_minify": "yarn parcel build --out-dir bundled --no-minify --no-source-maps --no-cache ./src/*.js",
     "start": "yarn parcel --no-cache index.html"
@@ -36,6 +36,7 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jest": "^21.7.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
     "husky": "^1.0.0-rc.13",
     "jest": "^23.4.0",
     "less": "^3.8.1",
