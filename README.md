@@ -1,6 +1,6 @@
 # front-end tech stack
-* Vue js
-* Less, CSS Module
+* Vue js(support single file components)
+* Less
 * parcel-bundler
 * prettier
 * eslint
