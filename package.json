@@ -44,6 +44,7 @@
     "parcel-plugin-bundle-manifest": "^0.2.0",
     "prettier": "^1.13.7",
     "vue-hot-reload-api": "^2.3.0",
+    "vue-jest": "^2.6.0",
     "vue-template-compiler": "2.4.4"
   },
   "alias": {
