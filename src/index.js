@@ -1,15 +1,11 @@
 import Vue from "vue";
-import counter from "./counter.js";
-import TodoList from "./todo_list.vue";
+import App from "./app.vue";
 
 const el = document.createElement("div");
-el.innerHTML = `<div id="vue-app">
-  <todo-list></todo-list>
-  <counter></counter>
-</div>`;
+el.id = "app";
 document.body.appendChild(el);
 
 new Vue({
-  el: "#vue-app",
-  components: { TodoList, counter },
+  el: "#app",
+  render: h => h(App),
 });
