@@ -8,7 +8,7 @@
     "lint": "eslint --ext .js,.vue ./src --cache --ignore-path .gitignore --ignore-path .eslintignore --fix",
     "prettier:one": "eslint --cache --fix",
     "build_without_minify": "yarn parcel build --out-dir bundled --no-minify --no-source-maps --no-cache ./src/*.js",
-    "start": "yarn parcel --no-cache index.html"
+    "start": "yarn parcel index.html"
   },
   "husky": {
     "hooks": {
@@ -46,8 +46,5 @@
     "vue-hot-reload-api": "^2.3.0",
     "vue-jest": "^2.6.0",
     "vue-template-compiler": "2.6.8"
-  },
-  "alias": {
-    "vue": ".parcel-globals/vue.js"
   }
 }
